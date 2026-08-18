@@ -4,6 +4,7 @@ This directory contains portable versions of **How Much Should Your Coding Agent
 
 | Artifact | Purpose |
 |---|---|
+| [`How_Much_Should_Your_Coding_Agent_Think_beautified.pptx`](./How_Much_Should_Your_Coding_Agent_Think_beautified.pptx) | Polished, projector-friendly PowerPoint with a dark meetup theme, stronger hierarchy, and improved stage legibility. |
 | [`How_Much_Should_Your_Coding_Agent_Think.pdf`](./How_Much_Should_Your_Coding_Agent_Think.pdf) | Read-only presentation PDF for sharing and printing. |
 | [`How_Much_Should_Your_Coding_Agent_Think.pptx`](./How_Much_Should_Your_Coding_Agent_Think.pptx) | PowerPoint-compatible export used to create the Google Slides copy. |
 | [Google Slides presentation](https://docs.google.com/presentation/d/1kxoU4brgVf2dFczrdotrQcH9lLuewwVhhNSovYzCH_A/edit?usp=drivesdk) | Editable online presentation, updated with the Codex meetup closing page. |
