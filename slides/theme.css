@@ -1,0 +1,205 @@
+/* Shared stage theme for the HTML deck. */
+:root {
+  --stage: #081b33;
+  --stage-mid: #0d2945;
+  --ink: #f3f7fb;
+  --muted: #b6c8d9;
+  --coral: #ff6b57;
+  --teal: #49d4c3;
+  --line: #31536e;
+  --card: rgba(255, 255, 255, 0.055);
+  --card-teal: rgba(73, 212, 195, 0.095);
+  --card-coral: rgba(255, 107, 87, 0.13);
+}
+
+html,
+body {
+  background: var(--stage);
+}
+
+body {
+  min-width: 1280px;
+  min-height: 720px;
+}
+
+.slide-container {
+  width: 1280px !important;
+  height: 720px !important;
+  min-height: 720px !important;
+  background:
+    radial-gradient(circle at 88% 9%, rgba(73, 212, 195, 0.12), transparent 25%),
+    linear-gradient(135deg, var(--stage) 0%, var(--stage-mid) 100%) !important;
+  color: var(--muted) !important;
+  box-shadow: inset 0 0 0 1px rgba(73, 212, 195, 0.15);
+}
+
+.slide-container::before,
+.slide-container::after,
+.frame::before,
+.frame::after {
+  background: transparent !important;
+  border: 2px solid rgba(73, 212, 195, 0.36);
+  border-radius: 18px;
+  opacity: 0.9;
+}
+
+.slide-container::after,
+.frame::after {
+  border-color: rgba(255, 107, 87, 0.45);
+}
+
+h1,
+h2,
+h3,
+.title,
+.level h2,
+.level b,
+.level h3,
+.level,
+.definition p,
+.prompt-text,
+.quote,
+.scenario h2,
+.scenario-quote,
+.scenario p,
+.poll-title,
+.discussion-text,
+.answer,
+.rule,
+.takeaway,
+.bottom,
+.vote h3,
+.result h3,
+.step b,
+.option,
+.choice {
+  color: var(--ink) !important;
+}
+
+.kicker,
+.eyebrow,
+.tag,
+.step,
+.num,
+.label,
+.scenario-label,
+.prompt-label,
+.vote-label,
+.discussion-label,
+.reveal-label,
+.item b,
+.pair,
+.level .tag,
+.footer strong,
+.bottom strong,
+.takeaway strong,
+.rule strong {
+  color: var(--coral) !important;
+}
+
+.subtitle,
+.intro,
+.footer,
+.scenario-note,
+.prompt-note,
+.discussion-text span,
+.discussion-text,
+.vote,
+.poll-sub,
+.why,
+.context,
+.item span,
+.step span,
+.level span,
+.tasks,
+.result p,
+.node p,
+.node h2,
+.definition small {
+  color: var(--muted) !important;
+}
+
+.band,
+.level,
+.step,
+.result,
+.takeaway,
+.vote,
+.scenario,
+.prompt,
+.poll,
+.choice,
+.option,
+.context,
+.bottom,
+.discussion,
+.reveal,
+.node,
+.item {
+  border-color: var(--line) !important;
+  background: var(--card) !important;
+}
+
+.band.light,
+.level:nth-child(1),
+.level:nth-child(3),
+.prompt,
+.reveal,
+.option:last-child,
+.result.light,
+.node:nth-child(3),
+.step:nth-child(3) {
+  background: var(--card-coral) !important;
+  border-color: rgba(255, 107, 87, 0.7) !important;
+}
+
+.band.medium,
+.level:nth-child(2),
+.result.medium,
+.node:nth-child(2),
+.step:nth-child(2),
+.choice,
+.option {
+  background: var(--card-teal) !important;
+}
+
+.band.deep,
+.result.deep,
+.step:nth-child(4) {
+  background: rgba(71, 119, 155, 0.14) !important;
+}
+
+.level,
+.band,
+.result,
+.step,
+.scenario,
+.prompt,
+.poll,
+.vote,
+.context,
+.bottom,
+.takeaway,
+.reveal,
+.discussion {
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+}
+
+.arrow {
+  color: var(--teal) !important;
+}
+
+strong {
+  color: var(--ink);
+}
+
+@media print {
+  html,
+  body {
+    background: var(--stage);
+  }
+
+  .slide-container {
+    box-shadow: none;
+  }
+}
