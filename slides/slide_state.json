@@ -2,8 +2,8 @@
   "project_info": {
     "title": "The question",
     "created": 1787050611.834,
-    "last_updated": 1787052593.929,
-    "total_slides": 10
+    "last_updated": 1787053221.657,
+    "total_slides": 11
   },
   "slides": [
     {
@@ -55,6 +55,11 @@
       "id": "closing",
       "state": "edited",
       "pageNum": 10
+    },
+    {
+      "id": "codex_meetup_closing",
+      "state": "edited",
+      "pageNum": 11
     }
   ],
   "outline": [
@@ -117,6 +122,12 @@
       "title": "Think just enough",
       "summary": "Close with the takeaway: Light for speed, Medium for everyday development, Deep when the cost of being wrong is higher than the cost of waiting. Invite discussion.",
       "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "codex_meetup_closing",
+      "title": "Let’s Learn Together",
+      "summary": "Faithful full-slide reproduction of the final page from the user-referenced Codex meetup bilingual PDF, including the website and LINE OpenChat QR codes.",
+      "image_plan": "Use only /home/ubuntu/vibe-coders-tokyo-9/slides/assets/codex-meetup-closing-page.png as a full-slide image, preserved without alteration."
     }
   ]
 }
