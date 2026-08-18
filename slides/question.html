@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Question</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&family=Roboto+Mono:wght@400;500;700&display=swap');
+    * { box-sizing: border-box; margin: 0; }
+    .slide-container { width: 1280px; min-height: 720px; background: #E0F2F1; color: #00695C; padding: 54px 68px 12px 68px; font-family: 'Roboto Mono', monospace; display: grid; grid-template-columns: repeat(6, 1fr); column-gap: 22px; position: relative; overflow: hidden; }
+    .slide-container::before { content: ''; position: absolute; width: 330px; height: 210px; background: rgba(0,77,64,.10); top: 48px; right: 54px; transform: rotate(-7deg); }
+    .slide-container::after { content: ''; position: absolute; width: 260px; height: 170px; background: rgba(255,82,82,.18); bottom: 32px; left: 280px; transform: rotate(8deg); }
+    .eyebrow { grid-column: 1 / span 4; color: #FF5252; font-size: 15px; letter-spacing: 1.7px; text-transform: uppercase; font-weight: 700; padding-top: 6px; z-index: 1; }
+    h1 { grid-column: 1 / span 4; z-index: 1; margin-top: 58px; font-family: 'Roboto Slab', serif; font-size: 66px; line-height: 1.04; font-weight: 900; letter-spacing: -2px; color: #004D40; }
+    .subtitle { grid-column: 1 / span 3; z-index: 1; margin-top: 18px; font-size: 20px; line-height: 1.5; max-width: 570px; }
+    .vote { grid-column: 1 / span 3; z-index: 1; margin-top: 28px; border: 1px solid #00695C; border-radius: 14px; padding: 12px 14px 10px 14px; font-size: 17px; line-height: 1.45; background: rgba(224,242,241,.72); }
+    .vote strong { color: #004D40; }
+    .levels { grid-column: 5 / span 2; z-index: 1; align-self: start; margin-bottom: 0; display: flex; flex-direction: column; gap: 10px; }
+    .level { border: 1px solid #004D40; border-radius: 14px; padding: 10px 12px 8px 12px; background: rgba(255,255,255,.25); }
+    .level:nth-child(2) { margin-left: 22px; background: rgba(0,105,92,.10); }
+    .level:nth-child(3) { margin-left: 44px; background: rgba(255,82,82,.20); }
+    .level b { display: block; font-family: 'Roboto Slab', serif; font-size: 26px; color: #004D40; margin-bottom: 5px; }
+    .level span { font-size: 13px; line-height: 1.35; }
+    .footer { grid-column: 1 / span 6; align-self: start; z-index: 1; font-size: 12px; letter-spacing: .8px; color: #00695C; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="eyebrow">Vibe Coders Tokyo #9 · Models, Models, Models</div>
+    <h1>If an AI coding agent can think harder,<br>should we always ask it to?</h1>
+    <div class="subtitle">Choosing reasoning effort in <strong>Claude Code</strong> and <strong>Codex</strong>.</div>
+    <div class="vote"><strong>Audience vote →</strong><br>Light, Medium, or Deep?<br>What would you choose for your next coding task?</div>
+    <div class="levels">
+      <div class="level"><b>LIGHT</b><span>Fast · clear · reversible</span></div>
+      <div class="level"><b>MEDIUM</b><span>Context · coordination · tests</span></div>
+      <div class="level"><b>DEEP</b><span>Ambiguous · complex · high-risk</span></div>
+    </div>
+    <div class="footer">A practical framework for choosing how much thinking a coding task deserves</div>
+  </div>
+</body>
+</html>

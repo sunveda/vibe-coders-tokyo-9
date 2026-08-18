@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audience scenario: normal feature</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&family=Roboto+Mono:wght@400;500;700&display=swap');
+    * { box-sizing: border-box; margin: 0; }
+    .slide-container { width: 1280px; min-height: 720px; background: #E0F2F1; color: #00695C; font-family: 'Roboto Mono', monospace; position: relative; overflow: hidden; }
+    .frame { min-height: 720px; padding: 50px 68px 0 68px; position: relative; }
+    .frame::after { content: ''; position: absolute; width: 390px; height: 170px; right: 48px; top: 132px; background: rgba(0,105,92,.10); transform: rotate(7deg); z-index: 0; }
+    .kicker { position: relative; z-index: 1; font-size: 14px; letter-spacing: 1.6px; text-transform: uppercase; color: #FF5252; font-weight: 700; }
+    .title { position: relative; z-index: 1; margin-top: 18px; font-family: 'Roboto Slab', serif; font-size: 52px; line-height: 1.06; color: #004D40; font-weight: 900; }
+    .content { position: relative; z-index: 1; display: grid; grid-template-columns: 4fr 2fr; gap: 34px; margin-top: 42px; }
+    .scenario { border-top: 4px solid #FF5252; padding-top: 18px; min-height: 204px; }
+    .scenario-label { font-size: 13px; letter-spacing: 1.2px; color: #FF5252; font-weight: 700; text-transform: uppercase; }
+    .scenario-quote { margin-top: 20px; font-family: 'Roboto Slab', serif; font-size: 28px; line-height: 1.28; color: #004D40; max-width: 700px; }
+    .scenario-note { margin-top: 16px; font-size: 14px; line-height: 1.45; }
+    .poll { border: 1px solid #00695C; border-radius: 14px; padding: 16px 16px 14px 16px; background: rgba(255,255,255,.26); min-height: 204px; }
+    .poll-title { font-family: 'Roboto Slab', serif; font-size: 24px; line-height: 1.15; color: #004D40; }
+    .poll-sub { margin-top: 10px; font-size: 13px; line-height: 1.4; }
+    .choices { margin-top: 18px; display: grid; gap: 8px; }
+    .choice { border: 1px solid #00695C; border-radius: 10px; padding: 8px 10px 7px 10px; font-size: 14px; color: #004D40; background: rgba(224,242,241,.6); }
+    .reveal { position: relative; z-index: 1; margin-top: 42px; border: 1px solid #004D40; border-radius: 14px; padding: 18px 20px 16px 20px; background: rgba(255,82,82,.16); display: grid; grid-template-columns: 2fr 4fr; gap: 28px; }
+    .reveal-label { font-size: 13px; letter-spacing: 1.2px; text-transform: uppercase; color: #FF5252; font-weight: 700; }
+    .answer { margin-top: 8px; font-family: 'Roboto Slab', serif; color: #004D40; font-size: 29px; font-weight: 900; }
+    .why { align-self: end; font-size: 15px; line-height: 1.5; color: #004D40; }
+    .why strong { color: #FF5252; }
+    .footer { position: absolute; left: 68px; bottom: 30px; font-size: 12px; letter-spacing: .7px; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="frame">
+      <div class="kicker">Audience scenario · 02</div>
+      <div class="title">Normal feature: how much thinking?</div>
+      <div class="content">
+        <div class="scenario">
+          <div class="scenario-label">The request</div>
+          <div class="scenario-quote">“Add CSV upload to an existing application. Validate rows, show useful errors, store valid records, and add tests.”</div>
+          <div class="scenario-note">This is no longer one isolated function. It touches product behavior, data validation, persistence, UI, and verification.</div>
+        </div>
+        <div class="poll">
+          <div class="poll-title">Your vote?</div>
+          <div class="poll-sub">Choose a level for Claude Code and Codex.</div>
+          <div class="choices">
+            <div class="choice">○ Light</div>
+            <div class="choice">○ Medium</div>
+            <div class="choice">○ Deep</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div><div class="reveal-label">Reveal · Claude Code / Codex</div><div class="answer">Medium / Medium</div></div>
+        <div class="why"><strong>Why:</strong> the agent must inspect the repository, understand conventions, coordinate several files, and run tests—but the requirements are still clear enough that maximum reasoning is unnecessary.</div>
+      </div>
+      <div class="footer">The goal is not maximum thinking. It is enough thinking to integrate reliably.</div>
+    </div>
+  </div>
+</body>
+</html>

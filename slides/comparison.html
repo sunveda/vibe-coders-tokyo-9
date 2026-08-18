@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claude Code and Codex comparison</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&family=Roboto+Mono:wght@400;500;700&display=swap');
+*{box-sizing:border-box;margin:0}
+.slide-container{width:1280px;min-height:720px;background:#E0F2F1;color:#00695C;font-family:'Roboto Mono',monospace;position:relative;overflow:hidden}
+.frame{padding:48px 60px 0 60px;min-height:720px;position:relative}
+.slide-container:before{content:'';position:absolute;width:410px;height:150px;background:rgba(255,82,82,.13);right:45px;top:28px;transform:rotate(-4deg)}
+.kicker{font-size:13px;letter-spacing:1.6px;text-transform:uppercase;color:#FF5252;font-weight:700;position:relative}
+.title{margin-top:14px;font-family:'Roboto Slab',serif;font-size:47px;line-height:1.05;color:#004D40;font-weight:900;position:relative}
+.subtitle{margin-top:10px;font-size:14px;line-height:1.4;position:relative}
+.table-wrap{margin-top:28px;border:1px solid #00695C;border-radius:14px;overflow:hidden;position:relative;background:rgba(255,255,255,.18)}
+.row{display:grid;grid-template-columns:2.05fr 1.35fr 1.35fr 3.25fr;min-height:47px;border-top:1px solid rgba(0,105,92,.45);align-items:center}
+.row:first-child{border-top:none}
+.row > div{padding:8px 12px 7px 12px;font-size:12px;line-height:1.28}
+.header{background:#004D40;color:#E0F2F1;text-transform:uppercase;letter-spacing:.8px;font-weight:700;font-size:11px!important;min-height:38px}
+.header > div{padding-top:10px;padding-bottom:9px}
+.row:nth-child(3),.row:nth-child(5),.row:nth-child(7),.row:nth-child(9){background:rgba(0,105,92,.08)}
+.reason{font-weight:700;color:#FF5252;white-space:nowrap}
+.task{font-weight:700;color:#004D40}
+.why{color:#00695C}
+.note{margin-top:15px;font-size:12px;line-height:1.4;color:#004D40}
+.note strong{color:#FF5252}
+</style>
+</head>
+<body>
+<div class="slide-container">
+  <div class="frame">
+    <div class="kicker">03 / Same task, two tools</div>
+    <div class="title">Claude Code and Codex: a practical comparison</div>
+    <div class="subtitle"><strong>Reasoning recommendation:</strong> Claude Code / Codex. Use the same task, then compare the result at the same effort level.</div>
+    <div class="table-wrap">
+      <div class="row header"><div>Task</div><div>Claude Code</div><div>Codex</div><div>Why</div></div>
+      <div class="row"><div class="task">Simple helper or boilerplate</div><div class="reason">Light</div><div class="reason">Light</div><div class="why">Predictable and easy to verify; optimize for speed.</div></div>
+      <div class="row"><div class="task">Documentation or explanation</div><div class="reason">Light–Medium</div><div class="reason">Light–Medium</div><div class="why">Needs context, but is usually low risk.</div></div>
+      <div class="row"><div class="task">Unit tests or routine bug fix</div><div class="reason">Light–Medium</div><div class="reason">Light–Medium</div><div class="why">Behavior is clear and verification is quick.</div></div>
+      <div class="row"><div class="task">Normal feature implementation</div><div class="reason">Medium</div><div class="reason">Medium</div><div class="why">Must understand requirements and project conventions.</div></div>
+      <div class="row"><div class="task">Feature across multiple files</div><div class="reason">Medium–Deep</div><div class="reason">Medium–Deep</div><div class="why">More dependencies and integration risk.</div></div>
+      <div class="row"><div class="task">Complex debugging</div><div class="reason">Deep</div><div class="reason">Deep</div><div class="why">Multiple hypotheses need investigation and testing.</div></div>
+      <div class="row"><div class="task">Large refactor</div><div class="reason">Deep</div><div class="reason">Deep</div><div class="why">Preserve behavior while changing internal structure.</div></div>
+      <div class="row"><div class="task">Security, concurrency, migration</div><div class="reason">Deep</div><div class="reason">Deep</div><div class="why">Errors are costly; require verification and human review.</div></div>
+    </div>
+    <div class="note"><strong>Takeaway:</strong> the right level depends primarily on task complexity, ambiguity, and risk—not on which tool you choose.</div>
+  </div>
+</div>
+</body>
+</html>

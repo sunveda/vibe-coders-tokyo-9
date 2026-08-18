@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "title": "The question",
+    "created": 1787050611.834,
+    "last_updated": 1787050852.669,
+    "total_slides": 10
+  },
+  "slides": [
+    {
+      "id": "question",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "meaning",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "framework",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "comparison",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "scenario_easy",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "scenario_feature",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "scenario_bug",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "prompt_trap",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "decision_tree",
+      "state": "edited",
+      "pageNum": 9
+    },
+    {
+      "id": "closing",
+      "state": "edited",
+      "pageNum": 10
+    }
+  ],
+  "outline": [
+    {
+      "id": "question",
+      "title": "The question",
+      "summary": "Open with an audience prompt: if an AI coding agent can think harder, should we always ask it to think harder? Introduce light, medium, and deep reasoning as the core framework.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "meaning",
+      "title": "What does reasoning effort mean?",
+      "summary": "Define reasoning effort as the amount of analysis invested before and during implementation, including context tracking, alternatives, edge cases, and verification.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "framework",
+      "title": "The three-level framework",
+      "summary": "Explain Light, Medium, and Deep reasoning with concise definitions and a clear practical distinction.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "comparison",
+      "title": "Claude Code and Codex comparison",
+      "summary": "Show a generalized task-to-reasoning comparison table with the recommended Claude Code and Codex levels presented together, plus the reason for each recommendation.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "scenario_easy",
+      "title": "Audience scenario: easy task",
+      "summary": "Interactive scenario about adding a date-formatting helper and unit test; audience votes, then reveal Light for both tools.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "scenario_feature",
+      "title": "Audience scenario: normal feature",
+      "summary": "Interactive scenario about adding CSV upload to an existing application; audience votes, then reveal Medium for both tools.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "scenario_bug",
+      "title": "Audience scenario: difficult bug",
+      "summary": "Interactive scenario about production-only random logouts; audience votes, then reveal Deep for both tools.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "prompt_trap",
+      "title": "The trap: unclear prompts",
+      "summary": "Show that “Fix the login bug” is not enough information and that the first action may be clarification, because deep reasoning cannot compensate for missing requirements.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "decision_tree",
+      "title": "A practical decision tree",
+      "summary": "Present a concise decision tree mapping task clarity, scope, ambiguity, and risk to Light, Medium, or Deep reasoning in both Claude Code and Codex.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "closing",
+      "title": "Think just enough",
+      "summary": "Close with the takeaway: Light for speed, Medium for everyday development, Deep when the cost of being wrong is higher than the cost of waiting. Invite discussion.",
+      "image_plan": "Use a suitable image if needed"
+    }
+  ]
+}
